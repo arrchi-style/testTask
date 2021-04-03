@@ -126,4 +126,14 @@ export class LineChartComponent implements OnInit {
     });
     this.lineChartLabels.push(`Label ${this.lineChartLabels.length}`);
   }
+
+  downloadCanvas(event) {
+    // get the `<a>` element from click event
+    var anchor = event.target;
+    // get the canvas, I'm getting it by tag name, you can do by id
+    // and set the href of the anchor to the canvas dataUrl
+    anchor.href = document.getElementsByTagName('canvas')[0].toDataURL();
+    // set the anchors 'download' attibute (name of the file to be downloaded)
+    anchor.download = "ArthurPavlechkoTestTask.png";
+}
 }
