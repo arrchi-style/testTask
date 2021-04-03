@@ -1,0 +1,25 @@
+.btn {
+    margin: 5px;
+    color: #fff;
+}
+table {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .btn {
+        font-size: 13px;
+    }
+    table {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 400px) {
+
+}
